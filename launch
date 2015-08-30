@@ -1,0 +1,5 @@
+kill -9 $(lsof -i tcp:5000 -t)
+rm /Users/Chris/git/play/trendy/target/universal/stage/RUNNING_PID
+sbt compile stage
+heroku local
+
